@@ -48,6 +48,9 @@ end
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
+gem 'annotate'
+gem 'awesome_print'
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
