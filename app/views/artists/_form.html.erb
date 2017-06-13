@@ -11,18 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :artist_name %>
+    <%= form.text_field :name, id: :artist_name, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :genre_id %>
-    <%= form.collection_select :genre_id, Genre.all, :id, :name%>
+    <%= form.collection_select :genre_id, Genre.all, :id, :name, {}, {class: 'form-control'}%>
     <!-- hard to understand collection_select. this is saying, refer to this stuff we're including in the form as genre_id. Get all instances from Genre class. Sort them by ID, but show me the name associated. -->
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions form-group">
+    <%= form.submit class:"btn btn-submit btn-sm btn-warning" %>
   </div>
 <% end %>

@@ -1,5 +1,15 @@
-<h1>New Artist</h1>
+<div class="container-fluid">
+<!-- container-fluid is 15 pix of padding -->
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+    <!-- pushed box over 4 columns -->
+      <h1>New Artist</h1>
 
-<%= render 'form', artist: @artist %>
+      <%= render 'form', artist: @artist %>
 
-<%= link_to 'Back', artists_path %>
+      <%= link_to 'Back', artists_path %>
+    </div>
+  </div>
+</div>
+
+
